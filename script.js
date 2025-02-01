@@ -1,7 +1,14 @@
 const container = document.querySelector('.container');
 const showFive = document.getElementById('five');   
 const showAll = document.getElementById('all');
+const countText = document.querySelector('.count p'); // Находим текст счетчика
 
+let cartCount = 0; 
+
+
+function updateCartCount() {
+    countText.innerHTML = `В корзине: ${cartCount} ${cartCount > 1 ? 'товара' : 'товар'}`;
+}
 function renderProducts(products) {
     container.innerHTML =''
     products.forEach(tovar => {
@@ -39,8 +46,17 @@ function renderProducts(products) {
         addBtn.onclick = () => {
             addBtn.classList.toggle('add');
             addBtn.classList.toggle('added');
-            addBtn.innerText = addBtn.classList.contains('add') ? 'Добавлено' : 'Добавить в корзину';
-        }
+
+            if (addBtn.classList.contains('add')) {
+                addBtn.innerText = 'Добавлено';
+                cartCount++; 
+            } else {
+                addBtn.innerText = 'Добавить в корзину';
+                cartCount--; 
+            }
+
+            updateCartCount(); 
+        };
 
         image.src = tovar.image;
         name.innerHTML = tovar.title;
@@ -64,11 +80,12 @@ function renderProducts(products) {
         container.append(product);
     });
 }
-
+updateCartCount();
 renderProducts(arr);
 
 showFive.onclick = () => {
     renderProducts(arr.slice(0, 5));
+
 }
 showAll.onclick = () => {
     renderProducts(arr);
