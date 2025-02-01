@@ -102,7 +102,6 @@ renderProducts(arr);
 showFive.onclick = () => {
     renderProducts(arr.slice(0, 5)); 
 };
-
 showAll.onclick = () => {
     renderProducts(arr); 
 };
