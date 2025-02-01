@@ -11,7 +11,6 @@ function updateCartCount() {
     countText.innerHTML = `В корзине: ${cartCount} ${cartCount > 1 ? 'товара' : 'товар'}`;
 }
 
-
 function renderProducts(products) {
     container.innerHTML = '';
     products.forEach(tovar => {
