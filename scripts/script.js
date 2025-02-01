@@ -74,7 +74,6 @@ function renderProducts(products) {
             updateCartCount(); 
         };
 
-
         image.src = tovar.image;
         name.innerHTML = tovar.title;
         description.innerHTML = tovar.description;
