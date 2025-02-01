@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.count{
+        text-align: center;
+        margin-top: 25px;
+        p{
+            font-size: 48px;
+            font-weight: 600;
+        }
+        button{
+            margin-top: 25px;
+            width: 254px;
+            height: 55px;;
+            border-radius: 10px;
+            border: 1px solid black;
+            font-size: 18px;
+            font-weight: 500;
+            text-align: center;
+            margin-left: 15px;
+            cursor: pointer;
+        }
+
+}
+.container{
+    padding-right: 15px;
+    width: 100%;
+    gap: 15px;      
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.product{
+    width: 364px;
+    height: 474px;
+    p{
+        font-size: 24px;
+        text-align: left;
+}
+
+    .first_side{
+        width: 364px;
+        height: 199px;
+        color: #FFFFFF;
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+
+        img{
+            width: 115px;
+            height: 161px;
+        }
+    
+    }
+    .second_side{
+        width: 364px;
+        height: 275px;
+        background-color: black;
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .description{
+        font-size: 10px;
+        color: gray;
+    
+    }
+    .details{
+        display: flex;
+        gap: 15px;
+    }
+    
+    .add{
+        width: 305px;
+        height: 55px;
+        border-radius: 10px;
+        border: 1px solid black;
+        background-color: #FFFFFF;
+        font-weight: 550;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    .added{
+        width: 305px;
+        height: 55px;
+        border-radius: 10px;
+        color: white;
+        border: 1px solid black;
+        background-color: #1F86FF;
+        font-size: 18px;
+        text-align: center;
+        font-weight: 550;
+        cursor: pointer;
+    }
+}
