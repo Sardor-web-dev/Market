@@ -74,6 +74,7 @@ function renderProducts(products) {
             updateCartCount(); 
         };
 
+
         image.src = tovar.image;
         name.innerHTML = tovar.title;
         description.innerHTML = tovar.description;
@@ -95,6 +96,7 @@ function renderProducts(products) {
         container.append(product);
     });
 }
+
 
 updateCartCount(); 
 renderProducts(arr); 
