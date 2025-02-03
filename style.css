@@ -29,6 +29,11 @@ body{
             text-align: center;
             margin-left: 15px;
             cursor: pointer;
+            transition: .2s ease;
+        }
+        button:hover{
+            background-color: black;
+            color: white;
         }
 
 }
@@ -92,6 +97,11 @@ body{
         font-weight: 550;
         font-size: 18px;
         cursor: pointer;
+        transition: .2s ease;
+    }
+    .add:hover{
+        background-color: #1F86FF;
+        color: white;
     }
     .added{
         width: 305px;
