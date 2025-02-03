@@ -31,7 +31,7 @@ function renderProducts(products) {
         const box = document.createElement('img');
         const tt = document.createElement('span');
         const addBtn = document.createElement('button');
-
+        
         product.classList.add('product');
         firstSide.classList.add('first_side');
         secondSide.classList.add('second_side');
