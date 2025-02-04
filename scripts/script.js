@@ -94,7 +94,6 @@ function renderProducts(products) {
             product.append(firstSide, secondSide);
     
             container.append(product);
-        
     }
 }
 
