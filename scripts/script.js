@@ -8,6 +8,9 @@ const showCart = document.getElementById('cart')
 let cartCount = 0;
 let cart = [];  
 
+showCart.onclick = () => {
+    modal.classList.toggle('modal_active')
+}
 
 function updateCartCount() {
     countText.innerHTML = `В корзине: ${cartCount} ${cartCount > 1 ? 'товара' : 'товар'}`;
@@ -94,7 +97,7 @@ function renderProducts(products) {
             secondSide.append(name, description, details, addBtn);
             product.append(firstSide, secondSide);
     
-            container.append(product);
+            container.append(modal, product);
     }
 };
 
