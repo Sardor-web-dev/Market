@@ -9,7 +9,7 @@ let cart = [];
 
 function updateCartCount() {
     countText.innerHTML = `В корзине: ${cartCount} ${cartCount > 1 ? 'товара' : 'товар'}`;
-}
+};
 
 function renderProducts(products) {
     container.innerHTML = '';
@@ -70,7 +70,6 @@ function renderProducts(products) {
                     cart = cart.filter(item => item.id !== tovar.id); 
                     cartCount--; 
                 }
-    
                 updateCartCount(); 
             };
     
@@ -95,8 +94,7 @@ function renderProducts(products) {
     
             container.append(product);
     }
-}
-
+};
 
 updateCartCount(); 
 renderProducts(arr); 
