@@ -2,6 +2,8 @@ const container = document.querySelector('.container');
 const showFive = document.getElementById('five');   
 const showAll = document.getElementById('all');
 const countText = document.querySelector('.count p'); 
+const modal = document.querySelector('.modal')
+const showCart = document.getElementById('cart')
 
 let cartCount = 0;
 let cart = [];  
