@@ -27,7 +27,7 @@ document.onclick =(e) => {
         texts.style.display = "none"
     }
 };
-CartList = cart
+CartList = cart;
 function updateCartCount() {
     countText.innerHTML = `В корзине: ${cartCount} ${cartCount > 1 ? 'товара' : 'товар'}`;
 };
