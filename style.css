@@ -132,6 +132,7 @@ body{
     display: none;
     justify-content: space-between;
     padding: 15px;
+    color: white;
     button{
         border: none;
         background-color: #1F86FF;

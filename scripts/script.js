@@ -40,12 +40,16 @@ function renderCart() {
 
         const firstSide = document.createElement('div');
         firstSide.classList.add('first_side');
+        // firstSide.style.width = '72,8px';
+        // firstSide.style.height = '39,8px';
         const image = document.createElement('img');
         image.src = cartProduct.image;
         firstSide.append(image);
 
         const secondSide = document.createElement('div');
         secondSide.classList.add('second_side');
+        // secondSide.style.width = '72,8px';
+        // secondSide.style.height = '55px';
         const name = document.createElement('p');
         name.innerHTML = cartProduct.title;
         const description = document.createElement('span');
