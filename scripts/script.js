@@ -4,20 +4,30 @@ const showAll = document.getElementById('all');
 const countText = document.querySelector('.count p'); 
 const CartWindow = document.querySelector(".cart");
 const CartBtn = document.getElementById("cartBtn");
+const texts = document.querySelector(".texts");
+const Close = document.getElementById("close")
+let CartList = document.querySelector(".list");
 
 let cartCount = 0;
 let cart = [];  
 
 CartBtn.onclick =() => {
     CartWindow.classList.add('cart_active');
+    texts.style.display = "flex"
+
+}
+Close.onclick =() => {
+    CartWindow.classList.remove('cart_active');
+    texts.style.display = "none"
+
 }
 document.onclick =(e) => {
     if(!CartWindow.contains(e.target) && e.target !== CartBtn) {
         CartWindow.classList.remove('cart_active');
+        texts.style.display = "none"
     }
 };
-
-
+CartList = cart
 function updateCartCount() {
     countText.innerHTML = `В корзине: ${cartCount} ${cartCount > 1 ? 'товара' : 'товар'}`;
 };
@@ -116,3 +126,5 @@ showFive.onclick = () => {
 showAll.onclick = () => {
     renderProducts(arr); 
 };
+
+console.log(CartList);

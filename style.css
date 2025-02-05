@@ -125,8 +125,16 @@ body{
     position: absolute;
     margin-top: 70px;
     width: 90%;
-    height: 100vh;
+    height: 500px;
     background-color: #1F86FF;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+}
+.texts{
+    display: none;
+    justify-content: space-between;
+    padding: 15px;
+    button{
+        border: none;
+        background-color: #1F86FF;
+        cursor: pointer;
+    }
 }
