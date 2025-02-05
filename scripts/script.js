@@ -14,7 +14,7 @@ let cart = [];
 CartBtn.onclick = () => {
     CartWindow.classList.add('cart_active');
     texts.style.display = "flex";
-    CartList.style.display = "flex";
+    CartList.style.display = "grid";
 };
 
 Close.onclick = () => {

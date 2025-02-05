@@ -60,7 +60,7 @@ body{
     .first_side{
         width: 364px;
         height: 199px;
-        color: #FFFFFF;
+        background-color: #FFFFFF;
         border: 1px solid black;
         display: flex;
         align-items: center;
@@ -125,7 +125,7 @@ body{
     position: absolute;
     margin-top: 70px;
     width: 90%;
-    height: 500px;
+    height: 1000px;
     background-color: #1F86FF;
 }
 .texts{
@@ -137,4 +137,10 @@ body{
         background-color: #1F86FF;
         cursor: pointer;
     }
+}
+.list{
+    display: grid;
+    grid-template-columns: repeat(3, 0.1fr);
+    align-items: center;
+    gap: 15px;
 }
