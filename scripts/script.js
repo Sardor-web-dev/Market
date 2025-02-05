@@ -2,9 +2,20 @@ const container = document.querySelector('.container');
 const showFive = document.getElementById('five');   
 const showAll = document.getElementById('all');
 const countText = document.querySelector('.count p'); 
+const CartWindow = document.querySelector(".cart");
+const CartBtn = document.getElementById("cartBtn");
 
 let cartCount = 0;
 let cart = [];  
+
+CartBtn.onclick =() => {
+    CartWindow.classList.add('cart_active');
+}
+document.onclick =(e) => {
+    if(!CartWindow.contains(e.target) && e.target !== CartBtn) {
+        CartWindow.classList.remove('cart_active');
+    }
+};
 
 
 function updateCartCount() {
