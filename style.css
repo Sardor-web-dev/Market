@@ -167,6 +167,7 @@ body{
 }
 
 
+
 .list {
     display: grid;
     grid-template-columns: repeat(4, 0.1fr);
