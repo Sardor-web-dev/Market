@@ -127,7 +127,8 @@ body{
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    height: 600px;
+    height: auto;
+    max-height: 600px;
     background-color: #1F86FF;
     transition: top 0.5s ease-in-out; 
     z-index: 1000;
@@ -164,9 +165,15 @@ body{
         cursor: pointer;
     }
 }
-.list{
+
+
+.list {
     display: grid;
     grid-template-columns: repeat(4, 0.1fr);
     align-items: center;
     gap: 15px;
+    max-height: 500px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 10px;
 }
