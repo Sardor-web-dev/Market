@@ -121,12 +121,44 @@ body{
         cursor: pointer;
     }
 }
-.cart_active{
-    position: absolute;
-    margin-top: 70px;
+.cart {
+    position: fixed;
+    top: -100vh; /* Корзина скрыта за верхним краем */
+    left: 50%;
+    transform: translateX(-50%);
     width: 90%;
-    height: 1000px;
+    height: 600px;
     background-color: #1F86FF;
+    transition: top 0.5s ease-in-out; /* Плавная анимация */
+    z-index: 1000;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cart_active {
+    top: 50px; /* Корзина плавно появляется */
+}
+
+.texts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    color: white;
+    font-size: 24px;
+}
+
+.texts button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 15px;
 }
 .texts{
     display: none;
